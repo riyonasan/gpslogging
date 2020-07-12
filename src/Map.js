@@ -12,13 +12,14 @@ export default class Map extends React.Component{
         return (
         <Maps
             style="mapbox://styles/mapbox/streets-v9"
+            center = {[ 139.754813,  35.677730]} //デフォルト位置を皇居に
             containerStyle={{
                 height: '100vh',
                 width: '100vw'
             }}
         >
             <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
-                <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
+                <Feature coordinates={[ 139.754813,  35.677730]} />
             </Layer>
         </Maps>
         )
